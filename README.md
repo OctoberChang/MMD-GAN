@@ -10,8 +10,8 @@ Code accompanying the paper [MMD-GAN: Towards Deeper Understanding of Moment Mat
 ```
 ./mmd_gan [OPTIONS]
 OPTIONS:
-	--dataset DATASET: type of dataset (mnist/cifar10/celeba/lsun)
-	--dataroot DATAROOT: path to dataset
+    --dataset DATASET: type of dataset (mnist/cifar10/celeba/lsun)
+    --dataroot DATAROOT: path to dataset
     --workers WORKERS: number of threads to load data
     --batch_size BATCH_SIZE: batch size for training
     --image_size IMAGE_SIZE: image size of dataset
