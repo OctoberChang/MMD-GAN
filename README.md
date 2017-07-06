@@ -7,6 +7,7 @@ Code accompanying the paper [MMD-GAN: Towards Deeper Understanding of Moment Mat
     - A recent Nvidia GPU
 
 # Usage
+```
 ./mmd_gan [OPTIONS]
 OPTIONS:
 	--dataset DATASET: type of dataset (mnist/cifar10/celeba/lsun)
