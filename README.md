@@ -3,7 +3,7 @@ Code accompanying the paper [MMD-GAN: Towards Deeper Understanding of Moment Mat
 
 # Prerequisites
     - Python, NumPy, Scipy
-    - PyTorch
+    - PyTorch (v0.1.12)
     - A recent Nvidia GPU
 
 # Usage
