@@ -27,7 +27,10 @@ OPTIONS:
 ```
 
 For a quick start, please set the DATA_PATH variable in run_exp.sh to
-the directory containing datasets and run
+```
+    ./data
+```
+and run
 ```
 	$ ./run_exp.sh [mnist/cifar10/celeba/lsun]
 ```
