@@ -32,6 +32,12 @@ the directory containing datasets and run
 	$ ./run_exp.sh [mnist/cifar10/celeba/lsun]
 ```
 
+# Dataset
+For mnist and cifar10, the dataset will be automatically download if not exist in
+the designated DATAROOT directory.
+
+For CelebA and LSUN dataset, please run the download script in ./data directory.
+
 
 # More Info
 This repository is by

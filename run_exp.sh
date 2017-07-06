@@ -3,7 +3,7 @@
 BS=64
 GPU_ID=0
 MAX_ITER=1000
-DATA_PATH=../GAN_MMD/data
+DATA_PATH=./data
 
 if [ $1 == 'mnist' ]; then
     DATASET=mnist
