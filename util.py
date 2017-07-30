@@ -105,6 +105,8 @@ def get_data(args, train_flag=True):
     elif args.dataset == 'celeba':
         imdir = 'train' if train_flag else 'val'
         dataroot = os.path.join(args.dataroot, imdir)
+        if args.image_size != 64:
+            raise ValueError('the image size for CelebA dataset need to be 64!')
 
         dataset = FolderWithImages(root=dataroot,
                                    input_transform=transforms.Compose([
