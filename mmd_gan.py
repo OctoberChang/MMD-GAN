@@ -63,8 +63,8 @@ class ONE_SIDED(nn.Module):
 
     def forward(self, input):
         output = self.main(-input)
-        output = -output.mean(1)
-        return output.view(1)
+        output = -output.mean()
+        return output
 
 
 # Get argument
@@ -189,6 +189,8 @@ for t in range(args.max_iter):
             mmd2_D = F.relu(mmd2_D)
 
             # compute rank hinge loss
+            #print('f_enc_X_D:', f_enc_X_D.size())
+            #print('f_enc_Y_D:', f_enc_Y_D.size())
             one_side_errD = one_sided(f_enc_X_D.mean(0) - f_enc_Y_D.mean(0))
 
             # compute L2-loss of AE
